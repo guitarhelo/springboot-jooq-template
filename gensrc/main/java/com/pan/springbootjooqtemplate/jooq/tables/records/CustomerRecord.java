@@ -28,45 +28,45 @@ import org.jooq.types.ULong;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class CustomerRecord extends TableRecordImpl<CustomerRecord> implements Record3<ULong, String, String> {
 
-    private static final long serialVersionUID = 747052441;
+    private static final long serialVersionUID = -1069473057;
 
     /**
-     * Setter for <code>demo.customer.id</code>.
+     * Setter for <code>springbootjooq.customer.id</code>.
      */
     public void setId(ULong value) {
         set(0, value);
     }
 
     /**
-     * Getter for <code>demo.customer.id</code>.
+     * Getter for <code>springbootjooq.customer.id</code>.
      */
     public ULong getId() {
         return (ULong) get(0);
     }
 
     /**
-     * Setter for <code>demo.customer.first_name</code>.
+     * Setter for <code>springbootjooq.customer.first_name</code>.
      */
     public void setFirstName(String value) {
         set(1, value);
     }
 
     /**
-     * Getter for <code>demo.customer.first_name</code>.
+     * Getter for <code>springbootjooq.customer.first_name</code>.
      */
     public String getFirstName() {
         return (String) get(1);
     }
 
     /**
-     * Setter for <code>demo.customer.last_name</code>.
+     * Setter for <code>springbootjooq.customer.last_name</code>.
      */
     public void setLastName(String value) {
         set(2, value);
     }
 
     /**
-     * Getter for <code>demo.customer.last_name</code>.
+     * Getter for <code>springbootjooq.customer.last_name</code>.
      */
     public String getLastName() {
         return (String) get(2);

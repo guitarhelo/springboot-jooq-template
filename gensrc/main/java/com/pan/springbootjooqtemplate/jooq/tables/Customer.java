@@ -4,8 +4,8 @@
 package com.pan.springbootjooqtemplate.jooq.tables;
 
 
-import com.pan.springbootjooqtemplate.jooq.Demo;
 import com.pan.springbootjooqtemplate.jooq.Keys;
+import com.pan.springbootjooqtemplate.jooq.Springbootjooq;
 import com.pan.springbootjooqtemplate.jooq.tables.records.CustomerRecord;
 
 import java.util.Arrays;
@@ -36,10 +36,10 @@ import org.jooq.types.ULong;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Customer extends TableImpl<CustomerRecord> {
 
-    private static final long serialVersionUID = 536323983;
+    private static final long serialVersionUID = 1085339848;
 
     /**
-     * The reference instance of <code>demo.customer</code>
+     * The reference instance of <code>springbootjooq.customer</code>
      */
     public static final Customer CUSTOMER = new Customer();
 
@@ -52,29 +52,29 @@ public class Customer extends TableImpl<CustomerRecord> {
     }
 
     /**
-     * The column <code>demo.customer.id</code>.
+     * The column <code>springbootjooq.customer.id</code>.
      */
     public final TableField<CustomerRecord, ULong> ID = createField("id", org.jooq.impl.SQLDataType.BIGINTUNSIGNED.nullable(false), this, "");
 
     /**
-     * The column <code>demo.customer.first_name</code>.
+     * The column <code>springbootjooq.customer.first_name</code>.
      */
     public final TableField<CustomerRecord, String> FIRST_NAME = createField("first_name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this, "");
 
     /**
-     * The column <code>demo.customer.last_name</code>.
+     * The column <code>springbootjooq.customer.last_name</code>.
      */
     public final TableField<CustomerRecord, String> LAST_NAME = createField("last_name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this, "");
 
     /**
-     * Create a <code>demo.customer</code> table reference
+     * Create a <code>springbootjooq.customer</code> table reference
      */
     public Customer() {
         this("customer", null);
     }
 
     /**
-     * Create an aliased <code>demo.customer</code> table reference
+     * Create an aliased <code>springbootjooq.customer</code> table reference
      */
     public Customer(String alias) {
         this(alias, CUSTOMER);
@@ -93,7 +93,7 @@ public class Customer extends TableImpl<CustomerRecord> {
      */
     @Override
     public Schema getSchema() {
-        return Demo.DEMO;
+        return Springbootjooq.SPRINGBOOTJOOQ;
     }
 
     /**

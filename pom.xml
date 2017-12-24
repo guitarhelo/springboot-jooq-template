@@ -99,6 +99,7 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.16</version>
         </dependency>
+
         <!-- utils end-->
 
 		<!-- Optional, for bootstrap -->
@@ -178,7 +179,7 @@
                     <generator>
                         <database>
                             <name>org.jooq.util.mysql.MySQLDatabase</name>
-                            <inputSchema>demo</inputSchema>
+                            <inputSchema>springbootjooq</inputSchema>
                         </database>
                         <target>
                             <packageName>com.pan.springbootjooqtemplate.jooq</packageName>

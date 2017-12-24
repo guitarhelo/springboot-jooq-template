@@ -4,13 +4,16 @@
 package com.pan.springbootjooqtemplate.jooq;
 
 
+import com.pan.springbootjooqtemplate.jooq.tables.Account;
+import com.pan.springbootjooqtemplate.jooq.tables.Comments;
 import com.pan.springbootjooqtemplate.jooq.tables.Customer;
+import com.pan.springbootjooqtemplate.jooq.tables.Posts;
 
 import javax.annotation.Generated;
 
 
 /**
- * Convenience access to all tables in demo
+ * Convenience access to all tables in springbootjooq
  */
 @Generated(
     value = {
@@ -23,7 +26,22 @@ import javax.annotation.Generated;
 public class Tables {
 
     /**
-     * The table <code>demo.customer</code>.
+     * The table <code>springbootjooq.account</code>.
+     */
+    public static final Account ACCOUNT = com.pan.springbootjooqtemplate.jooq.tables.Account.ACCOUNT;
+
+    /**
+     * The table <code>springbootjooq.comments</code>.
+     */
+    public static final Comments COMMENTS = com.pan.springbootjooqtemplate.jooq.tables.Comments.COMMENTS;
+
+    /**
+     * The table <code>springbootjooq.customer</code>.
      */
     public static final Customer CUSTOMER = com.pan.springbootjooqtemplate.jooq.tables.Customer.CUSTOMER;
+
+    /**
+     * The table <code>springbootjooq.posts</code>.
+     */
+    public static final Posts POSTS = com.pan.springbootjooqtemplate.jooq.tables.Posts.POSTS;
 }
